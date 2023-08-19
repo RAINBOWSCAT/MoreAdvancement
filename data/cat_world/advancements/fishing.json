@@ -1,0 +1,39 @@
+{
+    "parent": "cat_world:welcome",
+    "display": {
+        "icon": {
+            "item": "minecraft:fishing_rod",
+            "nbt": "{Enchantments:[{id:\"minecraft:lure\",lvl:255s}]}"
+        },
+        "title": "好像有鱼吃啦!",
+        "description": "钓鱼",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "fishing": {
+            "trigger": "minecraft:fishing_rod_hooked",
+            "conditions": {
+                "entity": {
+                    "type_specific": {
+                        "type": "fishing_hook",
+                        "in_open_water": true
+                    }
+                },
+                "player":{
+                    "type_specific": {
+                        "type": "player",
+                        "advancements":{
+                            "cat_world:cat_hometown": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 15000
+    }
+}

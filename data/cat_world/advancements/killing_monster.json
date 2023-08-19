@@ -1,0 +1,107 @@
+{
+    "parent": "cat_world:wood_hunter",
+    "display": {
+        "icon": {
+            "item": "minecraft:netherite_axe",
+            "nbt": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:255}]}"
+        },
+        "title": "Monster Killer!!!",
+        "description": "击杀骷髅",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "monster_killer": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "type": "minecraft:skeleton"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "type": "minecraft:skeleton"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "type": "minecraft:skeleton"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "type": "minecraft:skeleton"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "type": "minecraft:skeleton"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "type": "minecraft:skeleton"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "type": "minecraft:skeleton"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "type": "minecraft:skeleton"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "type": "minecraft:skeleton"
+                        }
+                    },
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                        "type": "minecraft:skeleton"
+                        }
+                    }
+                ],
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:wood_hunter": true,
+                            "cat_world:fishing": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 13000,
+        "function": "cat_world:function/killing_monster"
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "parent": "cat_world:bit_trade",
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald",
+            "nbt": "{Enchantments:[{id:\"minecraft:infinity\",lvl:255}]}"
+        },
+        "title": "永远的合伙人",
+        "description": "一次性与村民交易15件物品",
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "hidden": true,
+        "show_toast": true
+    },
+    "criteria": {
+        "trade_I":{
+            "trigger": "minecraft:villager_trade",
+            "conditions": {
+                "item": {
+                  "count": {
+                    "min": 15
+                  }
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:bit_trade": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 20000,
+        "function": "cat_world:function/trade"
+    }
+}

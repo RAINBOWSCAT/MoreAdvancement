@@ -1,0 +1,38 @@
+{
+    "parent": "cat_world:welcome",
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald",
+            "nbt": "{Enchantments:[{id:\"minecraft:infinity\",lvl:255}]}"
+        },
+        "title": "没有诚意的交易",
+        "description": "一次性与村民交易1件物品",
+        "frame": "task",
+        "announce_to_chat": true,
+        "hidden": true,
+        "show_toast": true
+    },
+    "criteria": {
+        "trade_I":{
+            "trigger": "minecraft:villager_trade",
+            "conditions": {
+                "item": {
+                  "count": {
+                    "min": 1
+                  }
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:welcome": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 2000
+    }
+}

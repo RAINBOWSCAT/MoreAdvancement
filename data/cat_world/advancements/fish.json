@@ -1,0 +1,42 @@
+{
+    "parent": "cat_world:fishing",
+    "display": {
+        "icon": {
+            "item": "minecraft:cod",
+            "nbt": "{Enchantments:[{id:\"minecraft:infinity\",lvl:255}]}"
+        },
+        "title": "有鱼吃啦!",
+        "description": "获得10个鳕鱼",
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "hidden": true,
+        "show_toast": true
+    },
+    "criteria": {
+        "potato":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                    "items": [
+                        "minecraft:cod"
+                    ],
+                    "count": {
+                        "min":10
+                    }
+                }],
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:fishing": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 15000,
+        "function": "cat_world:function/fish"
+    }
+}

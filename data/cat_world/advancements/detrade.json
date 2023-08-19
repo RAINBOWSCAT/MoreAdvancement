@@ -1,0 +1,37 @@
+{
+    "parent": "cat_world:lots_trade",
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_bars",
+            "nbt": "{Enchantments:[{id:\"minecraft:infinity\",lvl:255}]}"
+        },
+        "title": "黑色交易",
+        "description": "一次性与村民交易15件物品后将其击杀",
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "hidden": true,
+        "show_toast": true
+    },
+    "criteria": {
+        "trade_I":{
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:villager"
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:lots_trade": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 25000,
+        "function": "cat_world:function/detrade"
+    }
+}

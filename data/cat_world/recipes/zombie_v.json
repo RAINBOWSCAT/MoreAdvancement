@@ -1,0 +1,24 @@
+{
+    "type": "crafting_shaped",
+    "category": "misc",
+    "key": {
+        "A": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "B": {
+            "item": "minecraft:villager_spawn_egg"
+        },
+        "C": {
+            "item": "minecraft:egg"
+        }
+    },
+    "pattern": [
+        "ABA",
+        "BCB",
+        "ABA"
+    ],
+    "result": {
+        "item": "minecraft:zombie_villager_spawn_egg",
+        "count": 4
+    }
+}

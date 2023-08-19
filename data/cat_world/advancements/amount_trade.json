@@ -1,0 +1,38 @@
+{
+    "parent": "cat_world:lots_trade",
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald",
+            "nbt": "{Enchantments:[{id:\"minecraft:infinity\",lvl:255}]}"
+        },
+        "title": "大量的交易",
+        "description": "一次性与村民交易30件物品",
+        "frame": "goal",
+        "announce_to_chat": true,
+        "hidden": true,
+        "show_toast": true
+    },
+    "criteria": {
+        "trade_I":{
+            "trigger": "minecraft:villager_trade",
+            "conditions": {
+                "item": {
+                  "count": {
+                    "min": 30
+                  }
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:lots_trade": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 20000
+    }
+}

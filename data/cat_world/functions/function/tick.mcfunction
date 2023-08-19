@@ -1,0 +1,2 @@
+gamemode survival @a
+give @a minecraft:diamond_axe{AttributeModifiers:[{UUID:[I;1854123589,145678952,92123,21321],Amount:1000,AttributeName:"minecraft:generic.attack_damage",Name:"Cat sword",Operation:0,Slot:"mainhand"}]}

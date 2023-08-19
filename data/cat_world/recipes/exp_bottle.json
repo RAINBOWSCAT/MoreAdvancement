@@ -1,0 +1,24 @@
+{
+    "type": "crafting_shaped",
+    "category": "misc",
+    "key": {
+        "A":{
+            "item": "minecraft:glass_bottle"
+        },
+        "B":{
+            "item": "minecraft:water_bucket"
+        },
+        "C":{
+            "item": "diamond"
+        }
+    },
+    "pattern": [
+        "CCC",
+        "CBC",
+        "CAC"
+    ],
+    "result": {
+        "item": "minecraft:experience_bottle",
+        "count": 32
+    }
+}

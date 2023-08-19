@@ -1,0 +1,42 @@
+{
+    "parent": "cat_world:potato",
+    "display": {
+        "icon": {
+            "item": "minecraft:carrot",
+            "nbt": "{Enchantments:[{id:\"minecraft:infinity\",lvl:255}]}"
+        },
+        "title": "护眼神器",
+        "description": "获得10个胡萝卜",
+        "frame": "task",
+        "announce_to_chat": true,
+        "hidden": true,
+        "show_toast": true
+    },
+    "criteria": {
+        "potato":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                    "items": [
+                        "minecraft:carrot"
+                    ],
+                    "count": {
+                        "min":10
+                    }
+                }],
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:welcome": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 15000,
+        "function": "cat_world:function/carrot"
+    }
+}

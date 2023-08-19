@@ -1,0 +1,38 @@
+{
+    "parent": "cat_world:a_trade",
+    "display": {
+        "icon": {
+            "item": "minecraft:emerald",
+            "nbt": "{Enchantments:[{id:\"minecraft:infinity\",lvl:255}]}"
+        },
+        "title": "十分满意的交易",
+        "description": "与村民交易10件物品",
+        "frame": "goal",
+        "announce_to_chat": true,
+        "hidden": true,
+        "show_toast": true
+    },
+    "criteria": {
+        "trade_I":{
+            "trigger": "minecraft:villager_trade",
+            "conditions": {
+                "item": {
+                  "count": {
+                    "min": 10
+                  }
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:a_trade": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 10000
+    }
+}

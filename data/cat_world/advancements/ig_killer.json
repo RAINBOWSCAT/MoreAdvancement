@@ -1,0 +1,37 @@
+{
+    "parent": "cat_world:welcome",
+    "display": {
+        "icon": {
+            "item": "minecraft:iron_block",
+            "nbt": "{Enchantments:[{id:\"minecraft:sharpness\",lvl:255}]}"
+        },
+        "title": "啊?恶魔!!!",
+        "description": "击杀铁傀儡",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "ig_killer": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:iron_golem"
+                },
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:cat_hometown": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 50000,
+        "function": "cat_world:function/ig_killer"
+    }
+}

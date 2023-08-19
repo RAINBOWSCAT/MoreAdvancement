@@ -1,0 +1,42 @@
+{
+    "parent": "cat_world:welcome",
+    "display": {
+        "icon": {
+            "item": "minecraft:potato",
+            "nbt": "{Enchantments:[{id:\"minecraft:infinity\",lvl:255}]}"
+        },
+        "title": "土豆?",
+        "description": "获得10个土豆",
+        "frame": "task",
+        "announce_to_chat": true,
+        "hidden": true,
+        "show_toast": true
+    },
+    "criteria": {
+        "potato":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                    "items": [
+                        "minecraft:potato"
+                    ],
+                    "count": {
+                        "min":10
+                    }
+                }],
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:welcome": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "experience": 15000,
+        "function": "cat_world:function/potato"
+    }
+}

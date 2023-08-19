@@ -1,0 +1,65 @@
+{
+    "parent": "cat_world:cat_hometown",
+    "display": {
+        "icon": {
+            "item": "minecraft:experience_bottle"
+        },
+        "title": "欢迎来到Cat World!!!",
+        "description": "开始探索吧!",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "start_world":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements": {
+                            "cat_world:cat_hometown": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "cat_world:function/rewards",
+        "recipes": [
+            "cat_world:en_golden_apple",
+            "cat_world:en_golden_appleb",
+            "cat_world:anvil_a",
+            "cat_world:anvil_b",
+            "cat_world:tools/diamond_boot",
+            "cat_world:tools/diamond_axe",
+            "cat_world:tools/diamond_chest",
+            "cat_world:tools/diamond_hel",
+            "cat_world:tools/diamond_hoe",
+            "cat_world:tools/diamond_horse",
+            "cat_world:tools/diamond_legging",
+            "cat_world:tools/diamond_pickaxe",
+            "cat_world:tools/diamond_sword",
+            "cat_world:tools/gold_boot",
+            "cat_world:tools/gold_axe",
+            "cat_world:tools/gold_chest",
+            "cat_world:tools/gold_hel",
+            "cat_world:tools/gold_hoe",
+            "cat_world:tools/gold_horse",
+            "cat_world:tools/gold_legging",
+            "cat_world:tools/gold_pickaxe",
+            "cat_world:tools/gold_sword",
+            "cat_world:tools/iron_boot",
+            "cat_world:tools/iron_axe",
+            "cat_world:tools/iron_chest",
+            "cat_world:tools/iron_hel",
+            "cat_world:tools/iron_hoe",
+            "cat_world:tools/iron_horse",
+            "cat_world:tools/iron_legging",
+            "cat_world:tools/iron_pickaxe",
+            "cat_world:tools/iron_sword"
+        ]
+    }
+}

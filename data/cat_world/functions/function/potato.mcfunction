@@ -1,0 +1,1 @@
+give @s minecraft:baked_potato{"display":{"Name":'"§9大土豆"',"Lore":['"吃饱来吧!"']}} 192

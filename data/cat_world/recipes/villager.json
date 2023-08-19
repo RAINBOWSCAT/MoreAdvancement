@@ -1,0 +1,21 @@
+{
+    "type": "crafting_shaped",
+    "category": "misc",
+    "key": {
+        "A":{
+            "item": "minecraft:emerald"
+        },
+        "B":{
+            "item": "minecraft:egg"
+        }
+    },
+    "pattern": [
+        "AAA",
+        "ABA",
+        "AAA"
+    ],
+    "result": {
+        "item": "minecraft:villager_spawn_egg",
+        "count": 2
+    }
+}

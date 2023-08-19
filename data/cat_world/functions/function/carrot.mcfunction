@@ -1,0 +1,1 @@
+give @s minecraft:golden_carrot{"display":{"Name":'"§9大胡萝卜"',"Lore":['"吃饱来吧!"']}} 128
